@@ -8,6 +8,7 @@ export default function RedirectHandler() {
   const [status, setStatus] = useState({
     loading: true,
     error: null,
+    target: null,
   });
 
   useEffect(() => {
