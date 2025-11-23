@@ -11,8 +11,8 @@ const App = () => {
     <MainLayout>
       <Routes>
         <Route path="/" element={<Dashboard />} />
-        <Route path="/code/:code" element={<StatsPage />} />
         <Route path="/:code" element={<RedirectHandler />} />
+        <Route path="/code/:code" element={<StatsPage />} />
         <Route path="/healthz" element={<HealthCheck />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
