@@ -178,7 +178,7 @@ export default function Dashboard() {
                 Short Link Created
               </p>
               <a
-                href={`${import.meta.VITE_API_BASE_URL}/api/code/${created.code}`}
+                href={`${window.location.origin}/${created.code}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="font-medium text-primary hover:underline"
@@ -201,7 +201,7 @@ export default function Dashboard() {
               </Button>
 
               <a
-                href={`${import.meta.VITE_API_BASE_URL}/api/code/${created.code}`}
+                href={`${window.location.origin}/${created.code}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 rounded-md border text-muted-foreground hover:text-primary transition"
